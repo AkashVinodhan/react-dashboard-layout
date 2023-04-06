@@ -1,0 +1,11 @@
+{
+  "projects": [
+    { "name": "Server Migration", "progress": "20%", "color": "bg-danger" },
+    { "name": "Sales Tracking", "progress": "40%", "color": "bg-warning" },
+    { "name": "Customer Database", "progress": "60%", "color": "" },
+    { "name": "Payout Details", "progress": "80%", "color": "bg-info" },
+    { "name": "Account Setup", "progress": "100%", "color": "bg-success" }
+  ],
+
+  "illustations": "Add some quality, svg illustrations to your project courtesy of,a constantly updated collection of beautiful svg images that you can use completely free and without attribution!"
+}

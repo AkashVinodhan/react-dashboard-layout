@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Content from "./components/Content";
+import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
+import data from "./data.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="page-top">
+      <div id="wrapper">
+        <Sidebar />
+        <div id="content-wrapper" className="d-flex flex-column">
+          <div id="content">
+            <Topbar />
+            <Content {...data} />
+          </div>
+          {/* <!-- Footer --> */}
+          <footer className="sticky-footer bg-white">
+            <div className="container my-auto">
+              <div className="copyright text-center my-auto">
+                <span>Copyright &copy; Your Website 2021</span>
+              </div>
+            </div>
+          </footer>
+          {/* <!-- End of Footer --> */}
+        </div>
+      </div>
     </div>
   );
 }
